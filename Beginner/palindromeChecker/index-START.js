@@ -7,9 +7,26 @@ e.g palindromeChecker('racecar') // will return true
 
 
 function palindromeChecker(text) {
-    v// Code goes here
+    // parameters: 
+    // return boolean value
+    // example:
+    // pseudocode
+    //lowercase?
+    if (text === text.split('').reverse().join('')){
+        return true
+    }
+    return false
 }
 
-
+const isPalindrome = (x) => {   
+const lowerCase = x.toLowerCase()  
+const length = x.length 
+for (let i = 0; i < length / 2; i++) {   
+    if (lowerCase[i] !== lowerCase[length - 1 - i ]) {      
+        return false 
+    }    
+}  
+     return true 
+    }
 
 module.exports = palindromeChecker;

@@ -9,6 +9,10 @@ function reverseString(text) {
     return text.split('').reverse().join('')
 }
 
-
+const reverseStr2 = (str) => {
+    const array = [];  for (let i = str.length-1; i >= 0; i--) {
+      array.push(str[i])  
+    } 
+     return array.join('')}
 
 module.exports = reverseString
